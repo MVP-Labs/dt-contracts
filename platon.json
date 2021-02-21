@@ -1,0 +1,87 @@
+{
+    "config": {
+        "chainId": 201018,
+        "eip155Block": 3,
+        "cbft": {
+            "initialNodes": [
+                {
+                    "node": "enode://node0-pubkey@0.0.0.0:16789",
+                    "blsPubKey": "node0-blspubkey"
+                }
+            ],
+            "amount": 10,
+            "period": 10000,
+            "validatorMode": "ppos"
+        },
+        "genesisVersion": 3584
+    },
+    "economicModel": {
+        "common": {
+            "maxEpochMinutes": 4,
+            "maxConsensusVals": 4,
+            "additionalCycleTime": 28
+        },
+        "staking": {
+            "stakeThreshold": 10000000000000000000000,
+            "operatingThreshold": 1000000000000000000,
+            "maxValidators": 30,
+            "unStakeFreezeDuration": 2,
+            "rewardPerMaxChangeRange": 500,
+            "rewardPerChangeInterval": 10
+        },
+        "slashing": {
+            "slashFractionDuplicateSign": 100,
+            "duplicateSignReportReward": 50,
+            "maxEvidenceAge": 1,
+            "slashBlocksReward": 20,
+            "zeroProduceCumulativeTime": 3,
+            "zeroProduceNumberThreshold": 2,
+            "zeroProduceFreezeDuration": 1
+        },
+        "gov": {
+            "versionProposalVoteDurationSeconds": 160,
+            "versionProposalSupportRate": 6670,
+            "textProposalVoteDurationSeconds": 160,
+            "textProposalVoteRate": 5000,
+            "textProposalSupportRate": 6670,
+            "cancelProposalVoteRate": 5000,
+            "cancelProposalSupportRate": 6670,
+            "paramProposalVoteDurationSeconds": 160,
+            "paramProposalVoteRate": 5000,
+            "paramProposalSupportRate": 6670
+        },
+        "reward": {
+            "newBlockRate": 50,
+            "platonFoundationYear": 2,
+            "increaseIssuanceRatio": 500,
+            "theNumberOfDelegationsReward": 2
+        },
+        "innerAcc": {
+            "platonFundAccount": "atp1fyeszufxwxk62p46djncj86rd553skpparksa6",
+            "platonFundBalance": 0,
+            "cdfAccount": "atp1c8enpvs5v6974shxgxxav5dsn36e5jl46epkgc",
+            "cdfBalance": 4000000000000000000000000
+        }
+    },
+    "nonce": "0x0376e56dffd12ab53bb149bda4e0cbce2b6aabe4cccc0df0b5a39e12977a2fcd23",
+    "timestamp": "0x17538ac5720",
+    "extraData": "0xd782070186706c61746f6e86676f312e3131856c696e757800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "gasLimit": "4712388",
+    "alloc": {
+        "atp15t2w6p56y3auh0kqxl72mkxr5vzmfeqfyqk355": {
+            "balance": "20000000000000000000000000000"
+        },
+        "atp1wzqtz7h5k20kyxj77wccq2e2w790t9ws3csuwa": {
+            "balance": "20000000000000000000000000000"
+        },
+        "atp1lh4aw4t9l6vvrvn9n6pps8vjkhrfgd5nykkz5f": {
+            "balance": "20000000000000000000000000000"
+        },
+        "atp1q9yddandgav6clxwnpnnmjdht96wdwhyy4wlv2": {
+            "balance": "20000000000000000000000000000"
+        }
+    },
+    "number": "0x0",
+    "gasUsed": "0x0",
+    "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+}
