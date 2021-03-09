@@ -10,7 +10,7 @@ This project implements five smart contracts, including RoleController, AssetPro
 
 ### prerequisites
 
-You need to deploy the Alaya private network and install the alaya-truffle toolkit. Please refer to Platon's official documentations, [Build_Private_Chain] (https://devdocs.platon.network/docs/zh-CN/Build_Private_Chain/). 
+You need to deploy the Alaya private network and install the alaya-truffle toolkit. Please refer to Platon's official documentations, see [Build_Private_Chain](https://devdocs.platon.network/docs/zh-CN/Build_Private_Chain/). 
 
 It is recommended to use the platon.json file we provide, in which four accounts and their balances are predefined. The first account is used as the contract deployer, which is configured in the truffle-config.js file. You can consider it as the system account. The other three accounts will be used for tests of DataToken SDK. 
 
