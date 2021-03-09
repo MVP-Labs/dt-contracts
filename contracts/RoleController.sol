@@ -51,7 +51,7 @@ contract RoleController {
 
     /**
      * @dev checkPermission
-     *      check operation permission for given id/role.
+     *      checks operation permission for given id/role.
      * @param id refers to caller identifier
      * @param operation refers to the certain function
      * @return permitted or not.
@@ -101,7 +101,7 @@ contract RoleController {
 
     /**
      * @dev checkRole
-     *      check id-role pair.
+     *      checks id-role pair.
      * @param id refers to identifier
      * @param role refers to the certain role
      * @return bool.

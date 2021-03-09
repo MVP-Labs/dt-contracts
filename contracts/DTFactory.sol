@@ -89,7 +89,7 @@ contract DTFactory {
      * @param _owner refers to data token owner
      * @param _isLeaf leaf dt or composable dt
      * @param _checksum checksum associated with dt/metadata
-     * @param _ipfsPath referes to the metadata storage path
+     * @param _ipfsPath refers to the metadata storage path
      */
     function mintDataToken(
         bytes32 _dt,

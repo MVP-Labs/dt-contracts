@@ -1,40 +1,44 @@
 # dt-contracts
 
-## 概览
+[中文版](./README_CN.md)
 
-本仓库提供了五个合约功能，包括权限管理、资产方注册、数据通证颁发授权、可信代码模版发布以及多方计算任务市场。链上仅存储资产标识符，所有资产元数据都存储在IPFS当中。数据聚合方可生成可组合数据通证，在链上记录资产标识符间的层叠关系。数据应用方可发起链上任务，并请求链下计算。当前版本由机构充当聚合方、应用方，用户资产颁发也由机构完成，但资产授权计算由用户独立完成。
+## Overview
 
-## 运行流程
+This project implements five smart contracts, including RoleController, AssetProvider, OpTemplate, DTFactory and TaskMarket. Given an asset (e.g., dataset, computation, algorithm), only its identifier is stored on the chain, and the asset metadata is stored in the decentralized storage network, IPFS/Filecoin in our case. Data aggregators can generate composable data tokens and record the hierachical permission grants on the chain. Data demanders can create tasks on-chain, and solvers can submit jobs for off-chain data collaboration. Currently, trusted entities (e.g., enterprizes) act as data aggregators, demanders and solvers. Although the user assets are issued by trusted entities, the permission grants of assets can be approved only by the user.
 
-### 准备工作
+## Play With It
 
-首先需部署Alaya私有网络，并安装alaya-truffle。推荐使用我们提供的platon.json文件来部署私链，其中内置了四个账户和金额。第一个账户作为合约部署方，即系统管理员，已配置在truffle-config.js中。其他三个账户将在DataToken SDK的其他模块测试中使用到。还需填充配置文件中的node0-pubkey，node0-blspubkey, 参考Platon官方的[启动教程](https://devdocs.platon.network/docs/en/Build_Private_Chain/)
+### prerequisites
 
-系统管理员账户：
+You need to deploy the Alaya private network and install the alaya-truffle toolkit. Please refer to Platon's official documentations, [Build_Private_Chain] (https://devdocs.platon.network/docs/zh-CN/Build_Private_Chain/). 
+
+It is recommended to use the platon.json file we provide, in which four accounts and their balances are predefined. The first account is used as the contract deployer, which is configured in the truffle-config.js file. You can consider it as the system account. The other three accounts will be used for tests of DataToken SDK. 
+
+System account：
 ```
-公钥: atp15t2w6p56y3auh0kqxl72mkxr5vzmfeqfyqk355
-私钥: 4472aa5d4e2efe297784a3d44d840c9652cdb7663e22dedd920958bf6edfaf7e
+public key:  atp15t2w6p56y3auh0kqxl72mkxr5vzmfeqfyqk355
+private key: 4472aa5d4e2efe297784a3d44d840c9652cdb7663e22dedd920958bf6edfaf7e
 ```
 
-### 合约部署
+### contract deployment
 
-编译合约，已内置在./artifacts中：
+First, compile the datatoken contracts. The abis are stored in ./artifacts：
 ```
 $ git clone https://github.com/ownership-labs/dt-contracts
 $ cd dt-contracts
 $ alaya-truffle compile
 ```
 
-解锁内置系统账户：
+Then, unlock the system account：
 ```
 $ alaya-truffle console
 $ web3.platon.personal.importRawKey("4472aa5d4e2efe297784a3d44d840c9652cdb7663e22dedd920958bf6edfaf7e","123");
 $ web3.platon.personal.unlockAccount('atp15t2w6p56y3auh0kqxl72mkxr5vzmfeqfyqk355','123',999999);
 ```
 
-部署合约到私链：
+Finally, deploy the contracts to the Alaya network：
 ```
 alaya-truffle migrate --reset
 ```
 
-将输出的合约地址填充到./artifacts/address.json中，其他模块将使用到./artifacts中的合约abi和address
+You can see the contract addresses from the outputs. You need to fill them into the ./artifacts/address.json file. The abis and address file are required if you want to interact with other datatoken modules.
