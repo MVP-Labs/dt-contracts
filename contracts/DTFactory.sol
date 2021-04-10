@@ -1,4 +1,5 @@
 pragma solidity 0.5.17;
+pragma experimental ABIEncoderV2;
 
 // Copyright 2021 The dt-contracts Authors
 // This file is part of the dt-contracts library.
@@ -266,7 +267,7 @@ contract DTFactory {
         }
 
         CDTLists[_cdt] = true;
-        
+
         dts.push(_cdt);
 
         emit CDTMinted(_cdt, _childDTs, SUCCESS);
@@ -404,28 +405,37 @@ contract DTFactory {
      *      gets the total datatoken numbers.
      * @return uint256.
      */
-    function getDTNum()
-        public
-        view
-        returns (
-            uint256 totalDTs
-        )
-    {
+    function getDTNum() public view returns (uint256 totalDTs) {
         totalDTs = dts.length;
     }
 
     /**
-     * @dev getDTMapIdx
+     * @dev getDTMap
      *      gets all available dts.
-     * @return bytes32[].
+     * @return DataToken[].
      */
-    function getDTMapIdx()
+    function getDTMap()
         public
         view
         returns (
-            bytes32[] memory dtmapidx
+            bytes32[] memory dtidx,
+            address[] memory owners,
+            address[] memory minters,
+            bytes32[] memory checksums,
+            bool[] memory isLeafs,
+            string[] memory ipfsPaths,
+            uint256[] memory blockUpdateds
         )
     {
-        dtmapidx = dts;
+        for (uint256 i = 0; i < dts.length; i++) {
+            owners[i] = DTLists[dts[i]].owner;
+            minters[i] = DTLists[dts[i]].minter;
+            checksums[i] = DTLists[dts[i]].checksum;
+            isLeafs[i] = DTLists[dts[i]].isLeaf;
+            ipfsPaths[i] = DTLists[dts[i]].ipfsPath;
+            blockUpdateds[i] = DTLists[dts[i]].blockUpdated;
+        }
+
+        dtidx = dts;
     }
 }

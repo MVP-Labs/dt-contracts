@@ -275,7 +275,7 @@
         "id": 3,
         "nodeType": "ImportDirective",
         "scope": 426,
-        "sourceUnit": 1854,
+        "sourceUnit": 1952,
         "src": "857:30:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -960,7 +960,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_RoleController_$1853",
+              "typeIdentifier": "t_contract$_RoleController_$1951",
               "typeString": "contract RoleController"
             },
             "typeName": {
@@ -968,10 +968,10 @@
               "id": 55,
               "name": "RoleController",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1853,
+              "referencedDeclaration": 1951,
               "src": "1719:14:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_RoleController_$1853",
+                "typeIdentifier": "t_contract$_RoleController_$1951",
                 "typeString": "contract RoleController"
               }
             },
@@ -1001,7 +1001,7 @@
                       "referencedDeclaration": 56,
                       "src": "1926:2:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_RoleController_$1853",
+                        "typeIdentifier": "t_contract$_RoleController_$1951",
                         "typeString": "contract RoleController"
                       }
                     },
@@ -1035,10 +1035,10 @@
                         "name": "RoleController",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1853,
+                        "referencedDeclaration": 1951,
                         "src": "1931:14:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_RoleController_$1853_$",
+                          "typeIdentifier": "t_type$_t_contract$_RoleController_$1951_$",
                           "typeString": "type(contract RoleController)"
                         }
                       },
@@ -1052,13 +1052,13 @@
                       "nodeType": "FunctionCall",
                       "src": "1931:22:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_RoleController_$1853",
+                        "typeIdentifier": "t_contract$_RoleController_$1951",
                         "typeString": "contract RoleController"
                       }
                     },
                     "src": "1926:27:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_RoleController_$1853",
+                      "typeIdentifier": "t_contract$_RoleController_$1951",
                       "typeString": "contract RoleController"
                     }
                   },
@@ -1150,7 +1150,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2276,
+                            "referencedDeclaration": 2374,
                             "src": "2388:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1185,7 +1185,7 @@
                               "referencedDeclaration": 56,
                               "src": "2400:2:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_RoleController_$1853",
+                                "typeIdentifier": "t_contract$_RoleController_$1951",
                                 "typeString": "contract RoleController"
                               }
                             },
@@ -1196,7 +1196,7 @@
                             "lValueRequested": false,
                             "memberName": "MODIFY_ENTERPRIZE",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 1569,
+                            "referencedDeclaration": 1667,
                             "src": "2400:20:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -1238,7 +1238,7 @@
                           "referencedDeclaration": 56,
                           "src": "2369:2:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_RoleController_$1853",
+                            "typeIdentifier": "t_contract$_RoleController_$1951",
                             "typeString": "contract RoleController"
                           }
                         },
@@ -1249,7 +1249,7 @@
                         "lValueRequested": false,
                         "memberName": "checkPermission",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1714,
+                        "referencedDeclaration": 1812,
                         "src": "2369:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -1341,7 +1341,7 @@
                                   "referencedDeclaration": 56,
                                   "src": "2549:2:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_RoleController_$1853",
+                                    "typeIdentifier": "t_contract$_RoleController_$1951",
                                     "typeString": "contract RoleController"
                                   }
                                 },
@@ -1352,7 +1352,7 @@
                                 "lValueRequested": false,
                                 "memberName": "ERROR_NO_PERMISSION",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 1554,
+                                "referencedDeclaration": 1652,
                                 "src": "2549:22:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -1474,7 +1474,7 @@
                               "referencedDeclaration": 56,
                               "src": "2651:2:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_RoleController_$1853",
+                                "typeIdentifier": "t_contract$_RoleController_$1951",
                                 "typeString": "contract RoleController"
                               }
                             },
@@ -1485,7 +1485,7 @@
                             "lValueRequested": false,
                             "memberName": "ROLE_ENTERPRIZE",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 1560,
+                            "referencedDeclaration": 1658,
                             "src": "2651:18:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -1527,7 +1527,7 @@
                           "referencedDeclaration": 56,
                           "src": "2633:2:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_RoleController_$1853",
+                            "typeIdentifier": "t_contract$_RoleController_$1951",
                             "typeString": "contract RoleController"
                           }
                         },
@@ -1538,7 +1538,7 @@
                         "lValueRequested": false,
                         "memberName": "checkRole",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1753,
+                        "referencedDeclaration": 1851,
                         "src": "2633:12:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -1604,7 +1604,7 @@
                                   "referencedDeclaration": 56,
                                   "src": "2704:2:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_RoleController_$1853",
+                                    "typeIdentifier": "t_contract$_RoleController_$1951",
                                     "typeString": "contract RoleController"
                                   }
                                 },
@@ -1615,7 +1615,7 @@
                                 "lValueRequested": false,
                                 "memberName": "ROLE_ENTERPRIZE",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 1560,
+                                "referencedDeclaration": 1658,
                                 "src": "2704:18:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -1657,7 +1657,7 @@
                               "referencedDeclaration": 56,
                               "src": "2688:2:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_RoleController_$1853",
+                                "typeIdentifier": "t_contract$_RoleController_$1951",
                                 "typeString": "contract RoleController"
                               }
                             },
@@ -1668,7 +1668,7 @@
                             "lValueRequested": false,
                             "memberName": "addRole",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 1852,
+                            "referencedDeclaration": 1950,
                             "src": "2688:10:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$__$",
@@ -2258,7 +2258,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2276,
+                            "referencedDeclaration": 2374,
                             "src": "3501:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -2293,7 +2293,7 @@
                               "referencedDeclaration": 56,
                               "src": "3513:2:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_RoleController_$1853",
+                                "typeIdentifier": "t_contract$_RoleController_$1951",
                                 "typeString": "contract RoleController"
                               }
                             },
@@ -2304,7 +2304,7 @@
                             "lValueRequested": false,
                             "memberName": "MODIFY_ENTERPRIZE",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 1569,
+                            "referencedDeclaration": 1667,
                             "src": "3513:20:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -2346,7 +2346,7 @@
                           "referencedDeclaration": 56,
                           "src": "3482:2:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_RoleController_$1853",
+                            "typeIdentifier": "t_contract$_RoleController_$1951",
                             "typeString": "contract RoleController"
                           }
                         },
@@ -2357,7 +2357,7 @@
                         "lValueRequested": false,
                         "memberName": "checkPermission",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1714,
+                        "referencedDeclaration": 1812,
                         "src": "3482:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -2449,7 +2449,7 @@
                                   "referencedDeclaration": 56,
                                   "src": "3662:2:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_RoleController_$1853",
+                                    "typeIdentifier": "t_contract$_RoleController_$1951",
                                     "typeString": "contract RoleController"
                                   }
                                 },
@@ -2460,7 +2460,7 @@
                                 "lValueRequested": false,
                                 "memberName": "ERROR_NO_PERMISSION",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 1554,
+                                "referencedDeclaration": 1652,
                                 "src": "3662:22:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -3118,7 +3118,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2276,
+                            "referencedDeclaration": 2374,
                             "src": "4310:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -3153,7 +3153,7 @@
                               "referencedDeclaration": 56,
                               "src": "4322:2:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_RoleController_$1853",
+                                "typeIdentifier": "t_contract$_RoleController_$1951",
                                 "typeString": "contract RoleController"
                               }
                             },
@@ -3164,7 +3164,7 @@
                             "lValueRequested": false,
                             "memberName": "MODIFY_PROVIDER",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 1572,
+                            "referencedDeclaration": 1670,
                             "src": "4322:18:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -3206,7 +3206,7 @@
                           "referencedDeclaration": 56,
                           "src": "4291:2:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_RoleController_$1853",
+                            "typeIdentifier": "t_contract$_RoleController_$1951",
                             "typeString": "contract RoleController"
                           }
                         },
@@ -3217,7 +3217,7 @@
                         "lValueRequested": false,
                         "memberName": "checkPermission",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1714,
+                        "referencedDeclaration": 1812,
                         "src": "4291:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -3283,7 +3283,7 @@
                                   "referencedDeclaration": 56,
                                   "src": "4383:2:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_RoleController_$1853",
+                                    "typeIdentifier": "t_contract$_RoleController_$1951",
                                     "typeString": "contract RoleController"
                                   }
                                 },
@@ -3294,7 +3294,7 @@
                                 "lValueRequested": false,
                                 "memberName": "ERROR_NO_PERMISSION",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 1554,
+                                "referencedDeclaration": 1652,
                                 "src": "4383:22:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -3408,7 +3408,7 @@
                               "referencedDeclaration": 56,
                               "src": "4472:2:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_RoleController_$1853",
+                                "typeIdentifier": "t_contract$_RoleController_$1951",
                                 "typeString": "contract RoleController"
                               }
                             },
@@ -3419,7 +3419,7 @@
                             "lValueRequested": false,
                             "memberName": "ROLE_PROVIDER",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 1563,
+                            "referencedDeclaration": 1661,
                             "src": "4472:16:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -3461,7 +3461,7 @@
                           "referencedDeclaration": 56,
                           "src": "4454:2:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_RoleController_$1853",
+                            "typeIdentifier": "t_contract$_RoleController_$1951",
                             "typeString": "contract RoleController"
                           }
                         },
@@ -3472,7 +3472,7 @@
                         "lValueRequested": false,
                         "memberName": "checkRole",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1753,
+                        "referencedDeclaration": 1851,
                         "src": "4454:12:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -3538,7 +3538,7 @@
                                   "referencedDeclaration": 56,
                                   "src": "4523:2:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_RoleController_$1853",
+                                    "typeIdentifier": "t_contract$_RoleController_$1951",
                                     "typeString": "contract RoleController"
                                   }
                                 },
@@ -3549,7 +3549,7 @@
                                 "lValueRequested": false,
                                 "memberName": "ROLE_PROVIDER",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 1563,
+                                "referencedDeclaration": 1661,
                                 "src": "4523:16:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -3591,7 +3591,7 @@
                               "referencedDeclaration": 56,
                               "src": "4507:2:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_RoleController_$1853",
+                                "typeIdentifier": "t_contract$_RoleController_$1951",
                                 "typeString": "contract RoleController"
                               }
                             },
@@ -3602,7 +3602,7 @@
                             "lValueRequested": false,
                             "memberName": "addRole",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 1852,
+                            "referencedDeclaration": 1950,
                             "src": "4507:10:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$__$",
@@ -4059,7 +4059,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2276,
+                            "referencedDeclaration": 2374,
                             "src": "5028:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -4094,7 +4094,7 @@
                               "referencedDeclaration": 56,
                               "src": "5040:2:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_RoleController_$1853",
+                                "typeIdentifier": "t_contract$_RoleController_$1951",
                                 "typeString": "contract RoleController"
                               }
                             },
@@ -4105,7 +4105,7 @@
                             "lValueRequested": false,
                             "memberName": "MODIFY_PROVIDER",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 1572,
+                            "referencedDeclaration": 1670,
                             "src": "5040:18:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -4147,7 +4147,7 @@
                           "referencedDeclaration": 56,
                           "src": "5009:2:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_RoleController_$1853",
+                            "typeIdentifier": "t_contract$_RoleController_$1951",
                             "typeString": "contract RoleController"
                           }
                         },
@@ -4158,7 +4158,7 @@
                         "lValueRequested": false,
                         "memberName": "checkPermission",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1714,
+                        "referencedDeclaration": 1812,
                         "src": "5009:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -4224,7 +4224,7 @@
                                   "referencedDeclaration": 56,
                                   "src": "5101:2:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_RoleController_$1853",
+                                    "typeIdentifier": "t_contract$_RoleController_$1951",
                                     "typeString": "contract RoleController"
                                   }
                                 },
@@ -4235,7 +4235,7 @@
                                 "lValueRequested": false,
                                 "memberName": "ERROR_NO_PERMISSION",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 1554,
+                                "referencedDeclaration": 1652,
                                 "src": "5101:22:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -5158,10 +5158,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2279,
-                        2280
+                        2377,
+                        2378
                       ],
-                      "referencedDeclaration": 2279,
+                      "referencedDeclaration": 2377,
                       "src": "6265:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -5926,7 +5926,7 @@
         "id": 3,
         "nodeType": "ImportDirective",
         "scope": 426,
-        "sourceUnit": 1854,
+        "sourceUnit": 1952,
         "src": "857:30:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -6611,7 +6611,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_RoleController_$1853",
+              "typeIdentifier": "t_contract$_RoleController_$1951",
               "typeString": "contract RoleController"
             },
             "typeName": {
@@ -6619,10 +6619,10 @@
               "id": 55,
               "name": "RoleController",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1853,
+              "referencedDeclaration": 1951,
               "src": "1719:14:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_RoleController_$1853",
+                "typeIdentifier": "t_contract$_RoleController_$1951",
                 "typeString": "contract RoleController"
               }
             },
@@ -6652,7 +6652,7 @@
                       "referencedDeclaration": 56,
                       "src": "1926:2:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_RoleController_$1853",
+                        "typeIdentifier": "t_contract$_RoleController_$1951",
                         "typeString": "contract RoleController"
                       }
                     },
@@ -6686,10 +6686,10 @@
                         "name": "RoleController",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1853,
+                        "referencedDeclaration": 1951,
                         "src": "1931:14:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_RoleController_$1853_$",
+                          "typeIdentifier": "t_type$_t_contract$_RoleController_$1951_$",
                           "typeString": "type(contract RoleController)"
                         }
                       },
@@ -6703,13 +6703,13 @@
                       "nodeType": "FunctionCall",
                       "src": "1931:22:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_RoleController_$1853",
+                        "typeIdentifier": "t_contract$_RoleController_$1951",
                         "typeString": "contract RoleController"
                       }
                     },
                     "src": "1926:27:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_RoleController_$1853",
+                      "typeIdentifier": "t_contract$_RoleController_$1951",
                       "typeString": "contract RoleController"
                     }
                   },
@@ -6801,7 +6801,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2276,
+                            "referencedDeclaration": 2374,
                             "src": "2388:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -6836,7 +6836,7 @@
                               "referencedDeclaration": 56,
                               "src": "2400:2:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_RoleController_$1853",
+                                "typeIdentifier": "t_contract$_RoleController_$1951",
                                 "typeString": "contract RoleController"
                               }
                             },
@@ -6847,7 +6847,7 @@
                             "lValueRequested": false,
                             "memberName": "MODIFY_ENTERPRIZE",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 1569,
+                            "referencedDeclaration": 1667,
                             "src": "2400:20:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -6889,7 +6889,7 @@
                           "referencedDeclaration": 56,
                           "src": "2369:2:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_RoleController_$1853",
+                            "typeIdentifier": "t_contract$_RoleController_$1951",
                             "typeString": "contract RoleController"
                           }
                         },
@@ -6900,7 +6900,7 @@
                         "lValueRequested": false,
                         "memberName": "checkPermission",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1714,
+                        "referencedDeclaration": 1812,
                         "src": "2369:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -6992,7 +6992,7 @@
                                   "referencedDeclaration": 56,
                                   "src": "2549:2:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_RoleController_$1853",
+                                    "typeIdentifier": "t_contract$_RoleController_$1951",
                                     "typeString": "contract RoleController"
                                   }
                                 },
@@ -7003,7 +7003,7 @@
                                 "lValueRequested": false,
                                 "memberName": "ERROR_NO_PERMISSION",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 1554,
+                                "referencedDeclaration": 1652,
                                 "src": "2549:22:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -7125,7 +7125,7 @@
                               "referencedDeclaration": 56,
                               "src": "2651:2:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_RoleController_$1853",
+                                "typeIdentifier": "t_contract$_RoleController_$1951",
                                 "typeString": "contract RoleController"
                               }
                             },
@@ -7136,7 +7136,7 @@
                             "lValueRequested": false,
                             "memberName": "ROLE_ENTERPRIZE",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 1560,
+                            "referencedDeclaration": 1658,
                             "src": "2651:18:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -7178,7 +7178,7 @@
                           "referencedDeclaration": 56,
                           "src": "2633:2:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_RoleController_$1853",
+                            "typeIdentifier": "t_contract$_RoleController_$1951",
                             "typeString": "contract RoleController"
                           }
                         },
@@ -7189,7 +7189,7 @@
                         "lValueRequested": false,
                         "memberName": "checkRole",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1753,
+                        "referencedDeclaration": 1851,
                         "src": "2633:12:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -7255,7 +7255,7 @@
                                   "referencedDeclaration": 56,
                                   "src": "2704:2:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_RoleController_$1853",
+                                    "typeIdentifier": "t_contract$_RoleController_$1951",
                                     "typeString": "contract RoleController"
                                   }
                                 },
@@ -7266,7 +7266,7 @@
                                 "lValueRequested": false,
                                 "memberName": "ROLE_ENTERPRIZE",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 1560,
+                                "referencedDeclaration": 1658,
                                 "src": "2704:18:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -7308,7 +7308,7 @@
                               "referencedDeclaration": 56,
                               "src": "2688:2:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_RoleController_$1853",
+                                "typeIdentifier": "t_contract$_RoleController_$1951",
                                 "typeString": "contract RoleController"
                               }
                             },
@@ -7319,7 +7319,7 @@
                             "lValueRequested": false,
                             "memberName": "addRole",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 1852,
+                            "referencedDeclaration": 1950,
                             "src": "2688:10:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$__$",
@@ -7909,7 +7909,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2276,
+                            "referencedDeclaration": 2374,
                             "src": "3501:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -7944,7 +7944,7 @@
                               "referencedDeclaration": 56,
                               "src": "3513:2:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_RoleController_$1853",
+                                "typeIdentifier": "t_contract$_RoleController_$1951",
                                 "typeString": "contract RoleController"
                               }
                             },
@@ -7955,7 +7955,7 @@
                             "lValueRequested": false,
                             "memberName": "MODIFY_ENTERPRIZE",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 1569,
+                            "referencedDeclaration": 1667,
                             "src": "3513:20:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -7997,7 +7997,7 @@
                           "referencedDeclaration": 56,
                           "src": "3482:2:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_RoleController_$1853",
+                            "typeIdentifier": "t_contract$_RoleController_$1951",
                             "typeString": "contract RoleController"
                           }
                         },
@@ -8008,7 +8008,7 @@
                         "lValueRequested": false,
                         "memberName": "checkPermission",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1714,
+                        "referencedDeclaration": 1812,
                         "src": "3482:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -8100,7 +8100,7 @@
                                   "referencedDeclaration": 56,
                                   "src": "3662:2:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_RoleController_$1853",
+                                    "typeIdentifier": "t_contract$_RoleController_$1951",
                                     "typeString": "contract RoleController"
                                   }
                                 },
@@ -8111,7 +8111,7 @@
                                 "lValueRequested": false,
                                 "memberName": "ERROR_NO_PERMISSION",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 1554,
+                                "referencedDeclaration": 1652,
                                 "src": "3662:22:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -8769,7 +8769,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2276,
+                            "referencedDeclaration": 2374,
                             "src": "4310:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -8804,7 +8804,7 @@
                               "referencedDeclaration": 56,
                               "src": "4322:2:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_RoleController_$1853",
+                                "typeIdentifier": "t_contract$_RoleController_$1951",
                                 "typeString": "contract RoleController"
                               }
                             },
@@ -8815,7 +8815,7 @@
                             "lValueRequested": false,
                             "memberName": "MODIFY_PROVIDER",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 1572,
+                            "referencedDeclaration": 1670,
                             "src": "4322:18:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -8857,7 +8857,7 @@
                           "referencedDeclaration": 56,
                           "src": "4291:2:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_RoleController_$1853",
+                            "typeIdentifier": "t_contract$_RoleController_$1951",
                             "typeString": "contract RoleController"
                           }
                         },
@@ -8868,7 +8868,7 @@
                         "lValueRequested": false,
                         "memberName": "checkPermission",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1714,
+                        "referencedDeclaration": 1812,
                         "src": "4291:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -8934,7 +8934,7 @@
                                   "referencedDeclaration": 56,
                                   "src": "4383:2:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_RoleController_$1853",
+                                    "typeIdentifier": "t_contract$_RoleController_$1951",
                                     "typeString": "contract RoleController"
                                   }
                                 },
@@ -8945,7 +8945,7 @@
                                 "lValueRequested": false,
                                 "memberName": "ERROR_NO_PERMISSION",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 1554,
+                                "referencedDeclaration": 1652,
                                 "src": "4383:22:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -9059,7 +9059,7 @@
                               "referencedDeclaration": 56,
                               "src": "4472:2:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_RoleController_$1853",
+                                "typeIdentifier": "t_contract$_RoleController_$1951",
                                 "typeString": "contract RoleController"
                               }
                             },
@@ -9070,7 +9070,7 @@
                             "lValueRequested": false,
                             "memberName": "ROLE_PROVIDER",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 1563,
+                            "referencedDeclaration": 1661,
                             "src": "4472:16:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -9112,7 +9112,7 @@
                           "referencedDeclaration": 56,
                           "src": "4454:2:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_RoleController_$1853",
+                            "typeIdentifier": "t_contract$_RoleController_$1951",
                             "typeString": "contract RoleController"
                           }
                         },
@@ -9123,7 +9123,7 @@
                         "lValueRequested": false,
                         "memberName": "checkRole",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1753,
+                        "referencedDeclaration": 1851,
                         "src": "4454:12:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -9189,7 +9189,7 @@
                                   "referencedDeclaration": 56,
                                   "src": "4523:2:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_RoleController_$1853",
+                                    "typeIdentifier": "t_contract$_RoleController_$1951",
                                     "typeString": "contract RoleController"
                                   }
                                 },
@@ -9200,7 +9200,7 @@
                                 "lValueRequested": false,
                                 "memberName": "ROLE_PROVIDER",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 1563,
+                                "referencedDeclaration": 1661,
                                 "src": "4523:16:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -9242,7 +9242,7 @@
                               "referencedDeclaration": 56,
                               "src": "4507:2:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_RoleController_$1853",
+                                "typeIdentifier": "t_contract$_RoleController_$1951",
                                 "typeString": "contract RoleController"
                               }
                             },
@@ -9253,7 +9253,7 @@
                             "lValueRequested": false,
                             "memberName": "addRole",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 1852,
+                            "referencedDeclaration": 1950,
                             "src": "4507:10:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$__$",
@@ -9710,7 +9710,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2276,
+                            "referencedDeclaration": 2374,
                             "src": "5028:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -9745,7 +9745,7 @@
                               "referencedDeclaration": 56,
                               "src": "5040:2:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_RoleController_$1853",
+                                "typeIdentifier": "t_contract$_RoleController_$1951",
                                 "typeString": "contract RoleController"
                               }
                             },
@@ -9756,7 +9756,7 @@
                             "lValueRequested": false,
                             "memberName": "MODIFY_PROVIDER",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 1572,
+                            "referencedDeclaration": 1670,
                             "src": "5040:18:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -9798,7 +9798,7 @@
                           "referencedDeclaration": 56,
                           "src": "5009:2:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_RoleController_$1853",
+                            "typeIdentifier": "t_contract$_RoleController_$1951",
                             "typeString": "contract RoleController"
                           }
                         },
@@ -9809,7 +9809,7 @@
                         "lValueRequested": false,
                         "memberName": "checkPermission",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1714,
+                        "referencedDeclaration": 1812,
                         "src": "5009:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_external_view$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -9875,7 +9875,7 @@
                                   "referencedDeclaration": 56,
                                   "src": "5101:2:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_RoleController_$1853",
+                                    "typeIdentifier": "t_contract$_RoleController_$1951",
                                     "typeString": "contract RoleController"
                                   }
                                 },
@@ -9886,7 +9886,7 @@
                                 "lValueRequested": false,
                                 "memberName": "ERROR_NO_PERMISSION",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 1554,
+                                "referencedDeclaration": 1652,
                                 "src": "5101:22:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -10809,10 +10809,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2279,
-                        2280
+                        2377,
+                        2378
                       ],
-                      "referencedDeclaration": 2279,
+                      "referencedDeclaration": 2377,
                       "src": "6265:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -11548,7 +11548,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.19",
-  "updatedAt": "2021-04-10T14:08:11.023Z",
+  "updatedAt": "2021-04-10T15:05:35.242Z",
   "devdoc": {
     "methods": {
       "addProvider(address)": {
