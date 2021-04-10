@@ -4,7 +4,7 @@
 
 ## Overview
 
-This project implements five smart contracts, including RoleController, AssetProvider, OpTemplate, DTFactory and TaskMarket. Given an asset (e.g., dataset, computation, algorithm), only its identifier is stored on the chain, and the asset metadata is stored in the decentralized storage network, IPFS/Filecoin in our case. Data aggregators can generate composable data tokens and record the hierachical permission grants on the chain. Data demanders can create tasks on-chain, and solvers can submit jobs for off-chain data collaboration. Currently, trusted entities (e.g., enterprizes) act as data aggregators, demanders and solvers. Although the user assets are issued by trusted entities, the permission grants of assets can be approved only by the user.
+This project implements five smart contracts, including RoleController, AssetProvider, OpTemplate, DTFactory and TaskMarket. Given an asset (e.g., dataset, computation, algorithm), only its identifier is stored on the chain, and the asset metadata is stored in the decentralized storage network, IPFS/Filecoin in our case. Data aggregators can generate composable data tokens and record hierachical permission grants on the chain. Data demanders can create tasks on-chain, and solvers can submit jobs for off-chain data collaboration. Currently, trusted entities (e.g., enterprizes) act as data aggregators, demanders and solvers. Although the user assets are issued by trusted entities, the permission grants of the assets can be approved only by the user.
 
 ## Play With It
 
@@ -12,7 +12,7 @@ This project implements five smart contracts, including RoleController, AssetPro
 
 You need to deploy the Alaya private network and install the alaya-truffle toolkit. Please refer to Platon's official documentations, see [Build_Private_Chain](https://devdocs.platon.network/docs/zh-CN/Build_Private_Chain/). 
 
-It is recommended to use the platon.json file we provide, in which four accounts and their balances are predefined. The first account is used as the contract deployer, which is configured in the truffle-config.js file. You can consider it as the system account. The other three accounts will be used for tests of DataToken SDK. 
+It is recommended to use the platon.json file we provided, in which four accounts and their balances are predefined. The first account is used as the contract deployer, which is configured in the truffle-config.js file. You can consider it as the system account. The other three accounts will be used for tests of DataToken SDK. 
 
 System account：
 ```

@@ -1,4 +1,5 @@
 pragma solidity 0.5.17;
+pragma experimental ABIEncoderV2;
 
 // Copyright 2021 The dt-contracts Authors
 // This file is part of the dt-contracts library.
@@ -219,5 +220,21 @@ contract AssetProvider {
 
         name = enterprizeList[_id].name;
         desc = enterprizeList[_id].desc;
+    }
+
+    /**
+     * @dev getIssuerNames
+     *      returns the list of names of issuers/enterprizes.
+     * @param _idx refers to the enterprize identifiers
+     * @return string[].
+     */
+    function getIssuerNames(address[] memory _idx)
+        public
+        view
+        returns (string[] memory names)
+    {
+        for (uint i = 0; i < _idx.length; i++) {
+            names[i] = enterprizeList[_idx[i]].name;
+        }
     }
 }

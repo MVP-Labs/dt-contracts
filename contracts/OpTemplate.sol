@@ -38,6 +38,7 @@ contract OpTemplate {
     }
 
     mapping(bytes32 => Template) opTemplates;
+    bytes32[] public tids;
 
     event TemplatePublished(
         bytes32 indexed _tid,
@@ -107,6 +108,8 @@ contract OpTemplate {
             ipfsPath: _ipfsPath,
             blockUpdated: block.timestamp
         });
+        
+        tids.push(_tid);
 
         emit TemplatePublished(
             _tid,
@@ -228,5 +231,20 @@ contract OpTemplate {
         checksum = opTemplates[_tid].checksum;
         ipfsPath = opTemplates[_tid].ipfsPath;
         blockUpdated = opTemplates[_tid].blockUpdated;
+    }
+
+    /**
+     * @dev getTemplateNum
+     *      gets the total template numbers.
+     * @return uint256.
+     */
+    function getTemplateNum()
+        public
+        view
+        returns (
+            uint256 totalTemplates
+        )
+    {
+        totalTemplates = tids.length;
     }
 }

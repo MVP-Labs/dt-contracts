@@ -221,4 +221,34 @@ contract TaskMarket {
         cdt = jobList[_jobId].cdt;
         status = jobList[_jobId].status;
     }
+
+    /**
+     * @dev getTaskNum
+     *      gets the total task numbers.
+     * @return uint256.
+     */
+    function getTaskNum()
+        public
+        view
+        returns (
+            uint256 totalTasks
+        )
+    {
+        totalTasks = taskNum;
+    }
+
+    /**
+     * @dev getJobNum
+     *      gets the total job numbers.
+     * @return uint256.
+     */
+    function getJobNum()
+        public
+        view
+        returns (
+            uint256 totalJobs
+        )
+    {
+        totalJobs = jobNum;
+    }
 }

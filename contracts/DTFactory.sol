@@ -47,6 +47,8 @@ contract DTFactory {
     // available cdts
     mapping(bytes32 => bool) CDTLists;
 
+    bytes32[] public dts;
+
     event DataTokenMinted(
         bytes32 _dt,
         address indexed _owner,
@@ -165,6 +167,10 @@ contract DTFactory {
             blockUpdated: block.number
         });
 
+        if (_isLeaf) {
+            dts.push(_dt);
+        }
+
         emit DataTokenMinted(
             _dt,
             _owner,
@@ -260,6 +266,8 @@ contract DTFactory {
         }
 
         CDTLists[_cdt] = true;
+        
+        dts.push(_cdt);
 
         emit CDTMinted(_cdt, _childDTs, SUCCESS);
     }
@@ -389,5 +397,35 @@ contract DTFactory {
         isLeaf = DTLists[_dt].isLeaf;
         ipfsPath = DTLists[_dt].ipfsPath;
         blockUpdated = DTLists[_dt].blockUpdated;
+    }
+
+    /**
+     * @dev getDTNum
+     *      gets the total datatoken numbers.
+     * @return uint256.
+     */
+    function getDTNum()
+        public
+        view
+        returns (
+            uint256 totalDTs
+        )
+    {
+        totalDTs = dts.length;
+    }
+
+    /**
+     * @dev getDTMapIdx
+     *      gets all available dts.
+     * @return bytes32[].
+     */
+    function getDTMapIdx()
+        public
+        view
+        returns (
+            bytes32[] memory dtmapidx
+        )
+    {
+        dtmapidx = dts;
     }
 }
