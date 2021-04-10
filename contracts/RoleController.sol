@@ -26,7 +26,7 @@ contract RoleController {
     uint256 public constant ERROR_NO_PERMISSION = 10000;
 
     uint256 public constant ROLE_ADMIN = 100;
-    uint256 public constant ROLE_ENTERPRIZE = 101;
+    uint256 public constant ROLE_ENTERPRISE = 101;
     uint256 public constant ROLE_PROVIDER = 102;
 
     uint256 public constant MODIFY_ADMIN = 200;
@@ -110,7 +110,7 @@ contract RoleController {
         if (role == ROLE_ADMIN) {
             return isAdmin[id];
         }
-        if (role == ROLE_ENTERPRIZE) {
+        if (role == ROLE_ENTERPRISE) {
             return isEnterprize[id];
         }
         if (role == ROLE_PROVIDER) {
@@ -136,7 +136,7 @@ contract RoleController {
                 emit RoleAdded(id, role, SUCCESS);
             }
         }
-        if (role == ROLE_ENTERPRIZE) {
+        if (role == ROLE_ENTERPRISE) {
             if (checkPermission(tx.origin, MODIFY_ENTERPRIZE)) {
                 isEnterprize[id] = true;
                 emit RoleAdded(id, role, SUCCESS);

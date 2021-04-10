@@ -144,7 +144,7 @@ contract DTFactory {
         }
 
         // Owner of composable DT must be aggregator (enterprize now)
-        if (!_isLeaf && !rc.checkRole(_owner, rc.ROLE_ENTERPRIZE())) {
+        if (!_isLeaf && !rc.checkRole(_owner, rc.ROLE_ENTERPRISE())) {
             emit DataTokenMinted(
                 _dt,
                 _owner,

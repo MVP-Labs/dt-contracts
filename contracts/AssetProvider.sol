@@ -85,8 +85,8 @@ contract AssetProvider {
             return;
         }
 
-        if (!rc.checkRole(_id, rc.ROLE_ENTERPRIZE())) {
-            rc.addRole(_id, rc.ROLE_ENTERPRIZE());
+        if (!rc.checkRole(_id, rc.ROLE_ENTERPRISE())) {
+            rc.addRole(_id, rc.ROLE_ENTERPRISE());
         }
 
         if (isEnterprise(_id)) {
