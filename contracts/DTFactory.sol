@@ -427,6 +427,14 @@ contract DTFactory {
             uint256[] memory blockUpdateds
         )
     {
+        dtidx = new bytes32[](dts.length);
+        owners = new address[](dts.length);
+        minters = new address[](dts.length);
+        checksums = new bytes32[](dts.length);
+        isLeafs = new bool[](dts.length);
+        ipfsPaths = new string[](dts.length);
+        blockUpdateds = new uint256[](dts.length);
+
         for (uint256 i = 0; i < dts.length; i++) {
             owners[i] = DTLists[dts[i]].owner;
             minters[i] = DTLists[dts[i]].minter;

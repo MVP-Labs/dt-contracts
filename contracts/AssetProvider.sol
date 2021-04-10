@@ -29,7 +29,7 @@ contract AssetProvider {
     uint256 private constant PROVIDER_EXISTS = 2003;
     uint256 private constant PROVIDER_NOT_EXISTS = 2004;
 
-    struct Enterprize {
+    struct Enterprise {
         address identity;
         string name;
         string desc;
@@ -40,10 +40,10 @@ contract AssetProvider {
         uint256 reputation;
     }
 
-    mapping(address => Enterprize) enterprizeList;
+    mapping(address => Enterprise) enterpriseList;
     mapping(address => Provider) providerList;
 
-    event EnterprizeRegistered(
+    event EnterpriseRegistered(
         address indexed _id,
         string indexed _name,
         string _desc,
@@ -64,19 +64,19 @@ contract AssetProvider {
     }
 
     /**
-     * @dev registerEnterprize
-     *      registers new enterprize on-chain by the admin.
-     * @param _id refers to the enterprize identifier
-     * @param _name refers to the enterprize name
-     * @param _desc refers to the enterprize description
+     * @dev registerEnterprise
+     *      registers new enterprise on-chain by the admin.
+     * @param _id refers to the enterprise identifier
+     * @param _name refers to the enterprise name
+     * @param _desc refers to the enterprise description
      */
-    function registerEnterprize(
+    function registerEnterprise(
         address _id,
         string memory _name,
         string memory _desc
     ) public {
         if (!rc.checkPermission(msg.sender, rc.MODIFY_ENTERPRIZE())) {
-            emit EnterprizeRegistered(
+            emit EnterpriseRegistered(
                 _id,
                 _name,
                 _desc,
@@ -89,34 +89,34 @@ contract AssetProvider {
             rc.addRole(_id, rc.ROLE_ENTERPRIZE());
         }
 
-        if (isEnterprize(_id)) {
-            emit EnterprizeRegistered(_id, _name, _desc, ENTERPRIZE_EXISTS);
+        if (isEnterprise(_id)) {
+            emit EnterpriseRegistered(_id, _name, _desc, ENTERPRIZE_EXISTS);
             return;
         }
 
-        enterprizeList[_id] = Enterprize({
+        enterpriseList[_id] = Enterprise({
             identity: _id,
             name: _name,
             desc: _desc
         });
 
-        emit EnterprizeRegistered(_id, _name, _desc, SUCCESS);
+        emit EnterpriseRegistered(_id, _name, _desc, SUCCESS);
     }
 
     /**
-     * @dev updateEnterprize
-     *      updates the enterprize on-chain by the admin.
-     * @param _id refers to the enterprize identifier
-     * @param _name refers to the enterprize name
-     * @param _desc refers to the enterprize description
+     * @dev updateEnterprise
+     *      updates the enterprise on-chain by the admin.
+     * @param _id refers to the enterprise identifier
+     * @param _name refers to the enterprise name
+     * @param _desc refers to the enterprise description
      */
-    function updateEnterprize(
+    function updateEnterprise(
         address _id,
         string memory _name,
         string memory _desc
     ) public {
         if (!rc.checkPermission(msg.sender, rc.MODIFY_ENTERPRIZE())) {
-            emit EnterprizeRegistered(
+            emit EnterpriseRegistered(
                 _id,
                 _name,
                 _desc,
@@ -125,23 +125,23 @@ contract AssetProvider {
             return;
         }
 
-        if (!isEnterprize(_id)) {
-            emit EnterprizeRegistered(_id, _name, _desc, ENTERPRIZE_NOT_EXISTS);
+        if (!isEnterprise(_id)) {
+            emit EnterpriseRegistered(_id, _name, _desc, ENTERPRIZE_NOT_EXISTS);
             return;
         }
 
-        enterprizeList[_id] = Enterprize({
+        enterpriseList[_id] = Enterprise({
             identity: _id,
             name: _name,
             desc: _desc
         });
 
-        emit EnterprizeRegistered(_id, _name, _desc, SUCCESS);
+        emit EnterpriseRegistered(_id, _name, _desc, SUCCESS);
     }
 
     /**
      * @dev addProvider
-     *      adds new provider on-chain by the enterprize.
+     *      adds new provider on-chain by the enterprise.
      * @param _id refers to the provider identifier
      */
     function addProvider(address _id) public {
@@ -166,7 +166,7 @@ contract AssetProvider {
 
     /**
      * @dev updateProvider
-     *      update the provider on-chain by the enterprize.
+     *      update the provider on-chain by the enterprise.
      * @param _id refers to the provider identifier
      */
     function updateProvider(address _id) public {
@@ -196,36 +196,36 @@ contract AssetProvider {
     }
 
     /**
-     * @dev isEnterprize
-     *      checks enterprize role.
+     * @dev isEnterprise
+     *      checks enterprise role.
      * @param _id refers to the address identifier
      * @return bool.
      */
-    function isEnterprize(address _id) public view returns (bool) {
-        return enterprizeList[_id].identity == _id;
+    function isEnterprise(address _id) public view returns (bool) {
+        return enterpriseList[_id].identity == _id;
     }
 
     /**
-     * @dev getEnterprizebyId
-     *      returns the enterprize records.
-     * @param _id refers to the enterprize identifier
-     * @return Enterprize struct.
+     * @dev getEnterprisebyId
+     *      returns the enterprise records.
+     * @param _id refers to the enterprise identifier
+     * @return Enterprise struct.
      */
-    function getEnterprizebyId(address _id)
+    function getEnterprisebyId(address _id)
         public
         view
         returns (string memory name, string memory desc)
     {
-        require(isEnterprize(_id));
+        require(isEnterprise(_id));
 
-        name = enterprizeList[_id].name;
-        desc = enterprizeList[_id].desc;
+        name = enterpriseList[_id].name;
+        desc = enterpriseList[_id].desc;
     }
 
     /**
      * @dev getIssuerNames
-     *      returns the list of names of issuers/enterprizes.
-     * @param _idx refers to the enterprize identifiers
+     *      returns the list of names of issuers/enterprises.
+     * @param _idx refers to the enterprise identifiers
      * @return string[].
      */
     function getIssuerNames(address[] memory _idx)
@@ -233,8 +233,10 @@ contract AssetProvider {
         view
         returns (string[] memory names)
     {
-        for (uint i = 0; i < _idx.length; i++) {
-            names[i] = enterprizeList[_idx[i]].name;
+        names = new string[](_idx.length);
+
+        for (uint256 i = 0; i < _idx.length; i++) {
+            names[i] = enterpriseList[_idx[i]].name;
         }
     }
 }
