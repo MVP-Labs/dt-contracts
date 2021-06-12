@@ -12,7 +12,7 @@
 
 首先需部署Ethereum的本地测试环境，这里使用ganache-cli。ganache-cli的第一个账户作为合约部署方，即系统管理员。
 ```
-$ ganache-cli
+$ ganache-cli -d -m 'brass bus same payment express already energy direct type have venture afraid'
 ```
 
 ### 合约部署

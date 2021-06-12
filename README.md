@@ -12,7 +12,7 @@ This project implements five smart contracts, including RoleController, AssetPro
 
 You need to deploy the local Ethereum test environment. Here we recommend the ganache-cli. The first account is used as the contract deployer, acting as the system account.
 ```
-$ ganache-cli
+$ ganache-cli -d -m 'brass bus same payment express already energy direct type have venture afraid'
 ```
 
 ### contract deployment
