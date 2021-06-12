@@ -12,19 +12,20 @@
 
 首先需部署Ethereum和Filecoin本地测试环境，这里使用ganache工具。ganache-cli的第一个账户作为合约部署方，即系统管理员。
 ```
-$ npm install -g ganache-cli
-$ npm install -g ganache@filecoin
-$ npm install -g @ganache/filecoin
-$ ganache-cli -d -m 'brass bus same payment express already energy direct type have venture afraid'
-$ ganache filecoin
+> npm install -g truffle
+> npm install -g ganache-cli
+> npm install -g ganache@filecoin
+> npm install -g @ganache/filecoin
+> ganache-cli -d -m 'brass bus same payment express already energy direct type have venture afraid'
+> ganache filecoin
 
 ### 合约部署
 
 ```
-$ git clone https://github.com/ownership-labs/dt-contracts
-$ cd dt-contracts
-$ truffle compile
-$ truffle migrate --network development
+> git clone https://github.com/ownership-labs/dt-contracts
+> cd dt-contracts
+> truffle compile
+> truffle migrate --network development
 ```
 
-将输出的合约地址填充到./artifacts/address.json中，其他模块将使用到./artifacts中的合约abi和address
+将输出的合约地址填充到`./artifacts/address.json`中。
