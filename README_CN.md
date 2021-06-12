@@ -11,17 +11,18 @@
 ### 准备工作
 
 首先需部署Ethereum和Filecoin本地测试环境，这里使用ganache工具。ganache-cli的第一个账户作为合约部署方，即系统管理员。
-```
+```shell
 > npm install -g truffle
 > npm install -g ganache-cli
 > npm install -g ganache@filecoin
 > npm install -g @ganache/filecoin
 > ganache-cli -d -m 'brass bus same payment express already energy direct type have venture afraid'
 > ganache filecoin
+```
 
 ### 合约部署
 
-```
+```shell
 > git clone https://github.com/ownership-labs/dt-contracts
 > cd dt-contracts
 > truffle compile

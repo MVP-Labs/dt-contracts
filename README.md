@@ -11,7 +11,7 @@ This project implements five smart contracts, including RoleController, AssetPro
 ### prerequisites
 
 You need to deploy the Ethereum and Filecoin local environments. Here we recommend the ganache tools. The first account is used as the contract deployer, acting as the system account.
-```
+```shell
 > npm install -g truffle
 > npm install -g ganache-cli
 > npm install -g ganache@filecoin
@@ -23,11 +23,11 @@ You need to deploy the Ethereum and Filecoin local environments. Here we recomme
 ### contract deployment
 
 Compile the datatoken contracts. The abis are stored in ./artifacts：
-```
-$ git clone https://github.com/ownership-labs/dt-contracts
-$ cd dt-contracts
-$ truffle compile
-$ truffle migrate --network development
+```shell
+> git clone https://github.com/ownership-labs/dt-contracts
+> cd dt-contracts
+> truffle compile
+> truffle migrate --network development
 ```
 
 You can see the contract addresses from the outputs. You need to fill them into the `./artifacts/address.json` file. The abis and address file are required if you want to interact with other datatoken modules.
