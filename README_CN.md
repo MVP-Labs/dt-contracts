@@ -10,33 +10,18 @@
 
 ### 准备工作
 
-首先需部署Alaya私有网络，并安装alaya-truffle。推荐使用我们提供的platon.json文件来部署私链，其中内置了四个账户和金额。第一个账户作为合约部署方，即系统管理员，已配置在truffle-config.js中。其他三个账户将在DataToken SDK的其他模块测试中使用到。还需填充配置文件中的node0-pubkey，node0-blspubkey, 参考Platon官方的[启动教程](https://devdocs.platon.network/docs/en/Build_Private_Chain/)
-
-系统管理员账户：
+首先需部署Ethereum的本地测试环境，这里使用ganache-cli。ganache-cli的第一个账户作为合约部署方，即系统管理员。
 ```
-公钥: atp15t2w6p56y3auh0kqxl72mkxr5vzmfeqfyqk355
-私钥: 4472aa5d4e2efe297784a3d44d840c9652cdb7663e22dedd920958bf6edfaf7e
+$ ganache-cli
 ```
 
 ### 合约部署
 
-编译合约，已内置在./artifacts中：
 ```
 $ git clone https://github.com/ownership-labs/dt-contracts
 $ cd dt-contracts
-$ alaya-truffle compile
-```
-
-解锁内置系统账户：
-```
-$ alaya-truffle console
-$ web3.platon.personal.importRawKey("4472aa5d4e2efe297784a3d44d840c9652cdb7663e22dedd920958bf6edfaf7e","123");
-$ web3.platon.personal.unlockAccount('atp15t2w6p56y3auh0kqxl72mkxr5vzmfeqfyqk355','123',999999);
-```
-
-部署合约到私链：
-```
-alaya-truffle migrate --reset
+$ truffle compile
+$ truffle migrate --network development
 ```
 
 将输出的合约地址填充到./artifacts/address.json中，其他模块将使用到./artifacts中的合约abi和address

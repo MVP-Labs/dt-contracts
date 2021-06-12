@@ -1,9 +1,9 @@
 {
-  "alaya": {
-    "RoleController": "",
-    "AssetProvider": "",
-    "OpTemplate": "",
-    "DTFactory": "",
-    "TaskMarket": ""
+  "ganache": {
+    "RoleController": "0xbCd348D5e89Fff0d87C839AcCE34407137a237e7",
+    "AssetProvider": "0x54492faEDbD4e6F85f7bA64BF886BcbEB314CA1f",
+    "OpTemplate": "0xeb1c3EC9b302089a4adb792907685219ffb44712",
+    "DTFactory": "0x7E75d617b18aBe2bA094Da2150EeFDcfefCAb7Fb",
+    "TaskMarket": "0xBB4b58946262C5975B85fE8769daECa0A1477Bb7"
   }
 }
