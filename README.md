@@ -10,9 +10,13 @@ This project implements five smart contracts, including RoleController, AssetPro
 
 ### prerequisites
 
-You need to deploy the local Ethereum test environment. Here we recommend the ganache-cli. The first account is used as the contract deployer, acting as the system account.
+You need to deploy the Ethereum and Filecoin local environments. Here we recommend the ganache tools. The first account is used as the contract deployer, acting as the system account.
 ```
+$ npm install -g ganache-cli
+$ npm install -g ganache@filecoin
+$ npm install -g @ganache/filecoin
 $ ganache-cli -d -m 'brass bus same payment express already energy direct type have venture afraid'
+$ ganache filecoin
 ```
 
 ### contract deployment
@@ -26,4 +30,3 @@ $ truffle migrate --network development
 ```
 
 You can see the contract addresses from the outputs. You need to fill them into the ./artifacts/address.json file. The abis and address file are required if you want to interact with other datatoken modules.
-
